@@ -66,7 +66,6 @@ export function SymptomCheckPage() {
                 <CardDescription>{meta.message}</CardDescription>
               </div>
             </div>
-            {session.result.is_mock && <Badge tone="demo">Demo mode</Badge>}
           </div>
 
           <div className="space-y-4">

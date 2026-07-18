@@ -17,6 +17,7 @@ logger = logging.getLogger(__name__)
 API_URL = "https://api.openai.com/v1/chat/completions"
 IMAGES_API_URL = "https://api.openai.com/v1/images/generations"
 MODEL = "gpt-4o-mini"
+VISION_MODEL = "gpt-5"
 IMAGE_MODEL = "dall-e-3"
 
 
@@ -40,7 +41,6 @@ class OpenAIProvider(TextProvider, VisionProvider, ImageGenerationProvider):
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_prompt},
                 ],
-                "temperature": 0.3,
             }
             resp = requests.post(API_URL, headers=self._headers(), json=payload, timeout=30)
             resp.raise_for_status()
@@ -57,18 +57,17 @@ class OpenAIProvider(TextProvider, VisionProvider, ImageGenerationProvider):
         try:
             b64 = base64.b64encode(image_bytes).decode("utf-8")
             payload = {
-                "model": MODEL,
+                "model": VISION_MODEL,
                 "messages": [
                     {"role": "system", "content": system_prompt},
                     {
                         "role": "user",
                         "content": [
                             {"type": "text", "text": user_prompt},
-                            {"type": "image_url", "image_url": {"url": f"data:{mime_type};base64,{b64}"}},
+                            {"type": "image_url", "image_url": {"url": f"data:{mime_type};base64,{b64}", "detail": "high"}},
                         ],
                     },
                 ],
-                "temperature": 0.3,
             }
             resp = requests.post(API_URL, headers=self._headers(), json=payload, timeout=60)
             resp.raise_for_status()

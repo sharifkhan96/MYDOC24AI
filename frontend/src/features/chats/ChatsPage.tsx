@@ -18,6 +18,7 @@ import { Button } from "@/components/ui/Button";
 import { ChatBubble } from "@/components/ui/ChatBubble";
 import { Disclaimer } from "@/components/ui/Disclaimer";
 import { EmptyState } from "@/components/ui/EmptyState";
+import { VoiceInputButton } from "@/components/ui/VoiceInputButton";
 import type { PatientMemory } from "@/api/memory";
 
 type Mode = "permanent" | "temporary";
@@ -34,6 +35,7 @@ function ChatInput({ onSend, disabled }: { onSend: (text: string) => void; disab
       }}
       className="flex gap-2 border-t border-navy-100 p-3"
     >
+      <VoiceInputButton onTranscript={(transcript) => setText((current) => `${current} ${transcript}`.trim())} />
       <input
         value={text}
         onChange={(e) => setText(e.target.value)}
@@ -151,11 +153,6 @@ function PermanentChat() {
               {detail.messages.map((m) => (
                 <ChatBubble key={m.id} role={m.role}>
                   {m.content}
-                  {m.is_mock && (
-                    <div className="mt-1">
-                      <Badge tone="demo">Demo mode</Badge>
-                    </div>
-                  )}
                 </ChatBubble>
               ))}
             </div>

@@ -84,7 +84,6 @@ export function UploadsPage() {
                   <AlertTriangle className="h-3 w-3" /> Worth a clinician's review
                 </Badge>
               )}
-              {current.analysis.is_mock && <Badge tone="demo">Demo mode</Badge>}
             </div>
           </div>
           <p className="text-sm text-navy-600">{current.analysis.summary}</p>

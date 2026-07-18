@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 
 import { Sidebar } from "./Sidebar";
 import { TopNav } from "./TopNav";
+import { MyDoc24Assistant } from "@/components/assistant/MyDoc24Assistant";
 
 export function AppShell() {
   return (
@@ -14,6 +15,7 @@ export function AppShell() {
             <Outlet />
           </div>
         </main>
+        <MyDoc24Assistant />
       </div>
     </div>
   );
