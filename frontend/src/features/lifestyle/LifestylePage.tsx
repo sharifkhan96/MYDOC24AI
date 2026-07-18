@@ -176,7 +176,6 @@ export function LifestylePage() {
         <Card>
           <div className="mb-4 flex items-start justify-between">
             <CardTitle className="text-xl">Your lifestyle assessment</CardTitle>
-            {assessment.report.is_mock && <Badge tone="demo">Demo mode</Badge>}
           </div>
           <p className="mb-5 text-sm text-navy-600">{assessment.report.summary}</p>
 

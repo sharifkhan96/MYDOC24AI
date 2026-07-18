@@ -61,7 +61,6 @@ function RoleModelTab() {
         <Card>
           <div className="mb-3 flex items-start justify-between">
             <CardTitle className="text-xl">{result.name}</CardTitle>
-            {result.is_mock && <Badge tone="demo">Demo mode</Badge>}
           </div>
           <div className="mb-4 rounded-lg border border-navy-100 bg-navy-50/60 px-3 py-2 text-xs text-navy-400">
             AI-generated, illustrative overview inspired by public perception of {result.name}. Not verified biographical
@@ -132,7 +131,6 @@ function ForYouTab() {
         <Card>
           <div className="mb-4 flex items-center justify-between">
             <CardTitle>For "{result.goal}"</CardTitle>
-            {result.is_mock && <Badge tone="demo">Demo mode</Badge>}
           </div>
           <ul className="space-y-3">
             {result.content.recommendations?.map((r, i) => (

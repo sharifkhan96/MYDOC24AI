@@ -74,7 +74,6 @@ function TravelAdvisor() {
             <p className="text-sm font-semibold text-navy-700">
               {result.destination_name || DESTINATION_OPTIONS.find((o) => o.value === result.destination_type)?.label}
             </p>
-            {result.is_mock && <Badge tone="demo">Demo mode</Badge>}
           </div>
           <p className="whitespace-pre-line text-sm leading-relaxed text-navy-600">{result.advice}</p>
           <div className="mt-4">

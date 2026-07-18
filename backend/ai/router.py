@@ -2,7 +2,7 @@ from enum import Enum
 
 from .providers.anthropic_provider import AnthropicProvider
 from .providers.did_provider import DIDProvider
-from .providers.elevenlabs_provider import ElevenLabsProvider
+from .providers.openai_speech_provider import OpenAISpeechProvider
 from .providers.gemini_provider import GeminiProvider
 from .providers.openai_provider import OpenAIProvider
 
@@ -25,21 +25,19 @@ _TEXT_PROVIDERS = {
     "gemini": GeminiProvider,
 }
 
-# Default provider per task. Careful medical reasoning goes to Anthropic,
-# multimodal image/document reading goes to OpenAI, and fast conversational
-# turns for the live avatar go to Gemini. All three implement the same
-# TextProvider/VisionProvider interface so this mapping is the only place
-# that needs to change to rebalance load between vendors.
+# MyDoc24 is currently configured around one provider credential.  Keeping
+# every task on OpenAI prevents individual pages silently falling back to a
+# mock because a second vendor key was not supplied.
 TASK_PROVIDER_MAP = {
-    TaskType.TRIAGE_REASONING: "anthropic",
+    TaskType.TRIAGE_REASONING: "openai",
     TaskType.IMAGE_ANALYSIS: "openai",
     TaskType.DOCUMENT_ANALYSIS: "openai",
-    TaskType.MEDICATION_LOOKUP: "anthropic",
-    TaskType.LIFESTYLE_REPORT: "anthropic",
-    TaskType.CONVERSATIONAL_VOICE: "gemini",
+    TaskType.MEDICATION_LOOKUP: "openai",
+    TaskType.LIFESTYLE_REPORT: "openai",
+    TaskType.CONVERSATIONAL_VOICE: "openai",
     TaskType.PUBLIC_HEALTH_SUMMARY: "openai",
-    TaskType.MEDITATION_GUIDANCE: "anthropic",
-    TaskType.WELLBEING_PERSONALIZATION: "anthropic",
+    TaskType.MEDITATION_GUIDANCE: "openai",
+    TaskType.WELLBEING_PERSONALIZATION: "openai",
 }
 
 
@@ -54,7 +52,7 @@ def get_vision_provider(task_type: TaskType):
 
 
 def get_speech_provider():
-    return ElevenLabsProvider()
+    return OpenAISpeechProvider()
 
 
 def get_avatar_provider():

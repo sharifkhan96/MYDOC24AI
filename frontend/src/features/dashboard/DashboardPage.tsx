@@ -1,4 +1,4 @@
-import { Activity, BrainCircuit, ClipboardPlus, Heart, MessageCircle, Pill, ScanLine, Stethoscope, Video } from "lucide-react";
+import { Activity, ClipboardPlus, Heart, MessageCircle, Pill, ScanLine, Stethoscope, Video } from "lucide-react";
 import { Link } from "react-router-dom";
 
 import { Card, CardDescription, CardTitle } from "@/components/ui/Card";
@@ -12,7 +12,6 @@ const QUICK_LINKS = [
   { to: "/app/live-doctor", label: "Talk to a live doctor", description: "Start a spoken consultation with a doctor or nurse persona.", icon: Video },
   { to: "/app/medications", label: "Look up a medication", description: "Dosing, interactions, and what to do about a missed dose.", icon: Pill },
   { to: "/app/health-profile", label: "Your health profile", description: "Conditions, allergies, and medications you've told us about.", icon: Heart },
-  { to: "/app/memory", label: "Health memory", description: "See the facts a saved chat can use and how they are retrieved.", icon: BrainCircuit },
   { to: "/app/chats", label: "Your chats", description: "Continue a saved conversation or start a private one-off chat.", icon: MessageCircle },
 ];
 
