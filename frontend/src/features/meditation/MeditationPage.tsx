@@ -219,7 +219,6 @@ function SessionView({ session, onEnd }: { session: MeditationSession; onEnd: ()
             </button>
             {isNarrating && <Badge tone="home">Speaking…</Badge>}
           </div>
-          {entries.some((e) => e.is_mock) && <Badge tone="demo">Demo mode</Badge>}
         </div>
 
         <div className="flex flex-col rounded-xl2 border border-navy-100 bg-cream-100 text-navy-700">

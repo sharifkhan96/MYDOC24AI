@@ -6,6 +6,7 @@ export function EncyclopediaPage() {
       category="clinical"
       title="Encyclopedia"
       description="The history, severity, and current outlook for common conditions, written in plain language."
+      variant="globe"
     />
   );
 }

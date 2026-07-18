@@ -92,7 +92,6 @@ export function MedicationsPage() {
               {selected.generic_name && <CardDescription>{selected.generic_name} · {selected.drug_class}</CardDescription>}
             </div>
             <div className="flex gap-2">
-              {selected.is_mock && <Badge tone="demo">Demo mode</Badge>}
               <button onClick={() => setSelected(null)} className="text-sm text-navy-400 hover:underline">
                 Close
               </button>

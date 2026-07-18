@@ -24,7 +24,7 @@ def get_or_generate_medication(name: str) -> tuple[MedicationReference, bool]:
     if result.is_mock:
         medication = MedicationReference.objects.create(
             name=name,
-            adult_dosing="Demo mode: configure an AI provider key to see real dosing guidance here.",
+            adult_dosing="Medication guidance is temporarily unavailable. Please try again shortly.",
             how_to_take=result.text,
             is_seeded=False,
             generated_as_mock=True,
