@@ -36,6 +36,13 @@ export async function loginUser(email: string, password: string) {
   return data;
 }
 
+export async function loginAsDemo() {
+  const { data } = await apiClient.post<{ user: User; access: string; refresh: string }>(
+    "/auth/demo-login/",
+  );
+  return data;
+}
+
 export async function fetchMe() {
   const { data } = await apiClient.get<User>("/auth/me/");
   return data;

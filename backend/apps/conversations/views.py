@@ -4,6 +4,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from apps.core.permissions import OwnedByUserQuerySetMixin
+from apps.patient_memory.serializers import PatientMemorySerializer
 
 from .models import Conversation
 from .serializers import (
@@ -36,9 +37,13 @@ class ConversationViewSet(
         conversation = self.get_object()
         serializer = SendMessageSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
-        user_message, assistant_message = send_message(conversation, serializer.validated_data["content"])
+        user_message, assistant_message, memories = send_message(conversation, serializer.validated_data["content"])
         return Response(
-            {"user_message": MessageSerializer(user_message).data, "assistant_message": MessageSerializer(assistant_message).data},
+            {
+                "user_message": MessageSerializer(user_message).data,
+                "assistant_message": MessageSerializer(assistant_message).data,
+                "memory_used": PatientMemorySerializer(memories, many=True).data,
+            },
             status=status.HTTP_201_CREATED,
         )
 

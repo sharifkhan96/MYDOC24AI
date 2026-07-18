@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/Button";
 import { useAuth } from "./AuthContext";
 
 export function LoginPage() {
-  const { login } = useAuth();
+  const { login, demoLogin } = useAuth();
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -21,6 +21,19 @@ export function LoginPage() {
       navigate("/app/dashboard");
     } catch {
       setError("That email and password combination doesn't match an account.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  }
+
+  async function handleDemoLogin() {
+    setError(null);
+    setIsSubmitting(true);
+    try {
+      await demoLogin();
+      navigate("/app/dashboard");
+    } catch {
+      setError("Demo sign-in is unavailable. Check that the local backend is running in debug mode.");
     } finally {
       setIsSubmitting(false);
     }
@@ -58,7 +71,11 @@ export function LoginPage() {
           <Button type="submit" disabled={isSubmitting} className="w-full">
             {isSubmitting ? "Signing in…" : "Sign in"}
           </Button>
+          <Button type="button" variant="secondary" disabled={isSubmitting} className="w-full" onClick={handleDemoLogin}>
+            Continue as demo user
+          </Button>
         </form>
+        <p className="mt-3 text-center text-xs text-navy-400">Available only in the local development environment.</p>
         <p className="mt-6 text-center text-sm text-navy-400">
           New to MyDoc24?{" "}
           <Link to="/register" className="font-medium text-navy-700 hover:underline">

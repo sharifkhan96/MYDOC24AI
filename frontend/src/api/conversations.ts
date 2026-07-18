@@ -1,4 +1,5 @@
 import { apiClient } from "./client";
+import type { PatientMemory } from "./memory";
 
 export interface Message {
   id: number;
@@ -40,7 +41,7 @@ export async function deleteConversation(id: number) {
 }
 
 export async function sendMessage(conversationId: number, content: string) {
-  const { data } = await apiClient.post<{ user_message: Message; assistant_message: Message }>(
+  const { data } = await apiClient.post<{ user_message: Message; assistant_message: Message; memory_used: PatientMemory[] }>(
     `/conversations/${conversationId}/messages/`,
     { content },
   );

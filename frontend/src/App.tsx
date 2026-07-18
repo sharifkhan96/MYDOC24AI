@@ -15,6 +15,7 @@ import { LifestylePage } from "@/features/lifestyle/LifestylePage";
 import { LiveDoctorPage } from "@/features/live-doctor/LiveDoctorPage";
 import { MedicationsPage } from "@/features/medications/MedicationsPage";
 import { MeditationPage } from "@/features/meditation/MeditationPage";
+import { MemoryPage } from "@/features/memory/MemoryPage";
 import { PublicHealthPage } from "@/features/public-health/PublicHealthPage";
 import { SettingsPage } from "@/features/settings/SettingsPage";
 import { SymptomCheckPage } from "@/features/symptom-check/SymptomCheckPage";
@@ -53,6 +54,7 @@ export default function App() {
                   <Route path="meditation" element={<MeditationPage />} />
                   <Route path="chats" element={<ChatsPage />} />
                   <Route path="health-profile" element={<HealthProfilePage />} />
+                  <Route path="memory" element={<MemoryPage />} />
                   <Route path="lifestyle" element={<LifestylePage />} />
                   <Route path="connections" element={<ConnectionsPage />} />
                   <Route path="public-health" element={<PublicHealthPage />} />

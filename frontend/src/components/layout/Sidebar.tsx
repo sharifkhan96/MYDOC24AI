@@ -1,5 +1,6 @@
 import {
   Activity,
+  BrainCircuit,
   BookOpen,
   Heart,
   LayoutDashboard,
@@ -33,6 +34,7 @@ const NAV_GROUPS = [
     label: "You",
     items: [
       { to: "/app/health-profile", label: "Health profile", icon: Heart },
+      { to: "/app/memory", label: "Health memory", icon: BrainCircuit },
       { to: "/app/lifestyle", label: "Lifestyle", icon: Activity },
       { to: "/app/connections", label: "Connections", icon: Link2 },
     ],

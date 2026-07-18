@@ -16,6 +16,14 @@ services:
 
   backend:
     build: ./backend
+    # The bind mount below can carry CRLF line endings from a Windows checkout.
+    # Run a normalized copy so /bin/sh can execute the entrypoint reliably.
+    entrypoint:
+      - sh
+      - -c
+      - >-
+        tr -d '\r' < /app/entrypoint.sh > /tmp/entrypoint.sh &&
+        exec sh /tmp/entrypoint.sh
     env_file: .env
     environment:
       POSTGRES_HOST: db
