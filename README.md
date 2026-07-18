@@ -46,6 +46,23 @@ docker compose up --build
 
 The first run applies migrations and loads seed data automatically (see `backend/entrypoint.sh`).
 
+## Health memory demo
+
+The local login page includes **Continue as demo user**. It creates a disposable local account and seeds a realistic,
+safety-focused health history without needing an email address or AI key.
+
+For a one-minute judging demo:
+
+1. Sign in as the demo user and open **Health memory** in the sidebar.
+2. Show the transparent memory record: every fact has a type, source, confidence level, and a delete control.
+3. In **Agent context preview**, use the pre-filled ibuprofen question to show the pinned NSAID sensitivity, active
+   lisinopril, and kidney condition, plus the retrieved headache history.
+4. Open **Chats**, choose **Saved**, start a chat, and ask the same question. The response and the "Used" chips
+   visibly disclose the records considered by the agent.
+
+This is a development/demo implementation. Memory facts are scoped to the signed-in patient, and the demo-login route
+is available only while `DJANGO_DEBUG=True`.
+
 Create an admin user once the stack is up:
 
 ```bash

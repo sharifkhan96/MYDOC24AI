@@ -1,6 +1,8 @@
 import {
   Activity,
+  BrainCircuit,
   BookOpen,
+  ClipboardPlus,
   Heart,
   LayoutDashboard,
   Link2,
@@ -21,6 +23,7 @@ const NAV_GROUPS = [
     label: "Care",
     items: [
       { to: "/app/dashboard", label: "Dashboard", icon: LayoutDashboard },
+      { to: "/app/appointment-prep", label: "Appointment prep", icon: ClipboardPlus },
       { to: "/app/symptom-check", label: "Symptom check", icon: Stethoscope },
       { to: "/app/uploads", label: "Photo & test review", icon: ScanLine },
       { to: "/app/medications", label: "Medications", icon: Pill },
@@ -33,6 +36,7 @@ const NAV_GROUPS = [
     label: "You",
     items: [
       { to: "/app/health-profile", label: "Health profile", icon: Heart },
+      { to: "/app/memory", label: "Health memory", icon: BrainCircuit },
       { to: "/app/lifestyle", label: "Lifestyle", icon: Activity },
       { to: "/app/connections", label: "Connections", icon: Link2 },
     ],

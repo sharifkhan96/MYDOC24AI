@@ -25,6 +25,8 @@ INSTALLED_APPS = [
     "apps.core",
     "apps.accounts",
     "apps.health_profile",
+    "apps.patient_memory",
+    "apps.appointment_prep",
     "apps.conversations",
     "apps.triage",
     "apps.media_analysis",

@@ -1,6 +1,7 @@
 import { useQuery, useQueryClient } from "@tanstack/react-query";
-import { Clock, MessageCircle, Plus, ShieldOff, Trash2 } from "lucide-react";
+import { BrainCircuit, Clock, MessageCircle, Plus, ShieldOff, Trash2 } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 
 import {
   createConversation,
@@ -17,6 +18,7 @@ import { Button } from "@/components/ui/Button";
 import { ChatBubble } from "@/components/ui/ChatBubble";
 import { Disclaimer } from "@/components/ui/Disclaimer";
 import { EmptyState } from "@/components/ui/EmptyState";
+import type { PatientMemory } from "@/api/memory";
 
 type Mode = "permanent" | "temporary";
 
@@ -58,11 +60,13 @@ function PermanentChat() {
   const { data: conversations = [] } = useQuery({ queryKey: ["conversations"], queryFn: listConversations });
   const [activeId, setActiveId] = useState<number | null>(null);
   const [detail, setDetail] = useState<ConversationDetail | null>(null);
+  const [lastMemoryUsed, setLastMemoryUsed] = useState<PatientMemory[]>([]);
   const [isSending, setIsSending] = useState(false);
   const scrollRef = useAutoScroll(detail?.messages.length);
 
   async function openConversation(id: number) {
     setActiveId(id);
+    setLastMemoryUsed([]);
     const d = await getConversation(id);
     setDetail(d);
   }
@@ -76,8 +80,9 @@ function PermanentChat() {
   async function handleDelete(id: number) {
     await deleteConversation(id);
     if (activeId === id) {
-      setActiveId(null);
-      setDetail(null);
+    setActiveId(null);
+    setDetail(null);
+    setLastMemoryUsed([]);
     }
     queryClient.invalidateQueries({ queryKey: ["conversations"] });
   }
@@ -89,7 +94,8 @@ function PermanentChat() {
       prev ? { ...prev, messages: [...prev.messages, { id: Date.now(), role: "user", content: text, ai_provider_used: "", is_mock: false, created_at: "" }] } : prev,
     );
     try {
-      const { assistant_message } = await sendMessage(activeId, text);
+      const { assistant_message, memory_used } = await sendMessage(activeId, text);
+      setLastMemoryUsed(memory_used);
       const fresh = await getConversation(activeId);
       setDetail(fresh);
       void assistant_message;
@@ -132,6 +138,15 @@ function PermanentChat() {
       <div className="flex flex-1 flex-col rounded-xl2 border border-navy-100 bg-cream-100 text-navy-700">
         {detail ? (
           <>
+            <div className="border-b border-sage-100 bg-sage-100/40 px-4 py-2.5 text-xs text-navy-600">
+              <div className="flex flex-wrap items-center gap-2">
+                <BrainCircuit className="h-3.5 w-3.5 text-sage-600" />
+                <span className="font-medium">Memory-aware chat</span>
+                <span>Saved health facts are retrieved only when relevant.</span>
+                <Link to="/app/memory" className="font-medium underline">Inspect memory</Link>
+              </div>
+              {lastMemoryUsed.length > 0 && <div className="mt-2 flex flex-wrap gap-1.5">{lastMemoryUsed.map((memory) => <Badge key={memory.id} tone="demo">Used: {memory.title}</Badge>)}</div>}
+            </div>
             <div ref={scrollRef} className="flex-1 space-y-3 overflow-y-auto p-4">
               {detail.messages.map((m) => (
                 <ChatBubble key={m.id} role={m.role}>

@@ -3,6 +3,7 @@ import { Navigate, Route, BrowserRouter, Routes } from "react-router-dom";
 
 import { AppShell } from "@/components/layout/AppShell";
 import { AuthProvider } from "@/features/auth/AuthContext";
+import { AppointmentPrepPage } from "@/features/appointment-prep/AppointmentPrepPage";
 import { LoginPage } from "@/features/auth/LoginPage";
 import { ProtectedRoute } from "@/features/auth/ProtectedRoute";
 import { RegisterPage } from "@/features/auth/RegisterPage";
@@ -15,6 +16,7 @@ import { LifestylePage } from "@/features/lifestyle/LifestylePage";
 import { LiveDoctorPage } from "@/features/live-doctor/LiveDoctorPage";
 import { MedicationsPage } from "@/features/medications/MedicationsPage";
 import { MeditationPage } from "@/features/meditation/MeditationPage";
+import { MemoryPage } from "@/features/memory/MemoryPage";
 import { PublicHealthPage } from "@/features/public-health/PublicHealthPage";
 import { SettingsPage } from "@/features/settings/SettingsPage";
 import { SymptomCheckPage } from "@/features/symptom-check/SymptomCheckPage";
@@ -56,6 +58,7 @@ export default function App() {
                 <Route path="/app" element={<AppShell />}>
                   <Route index element={<Navigate to="dashboard" replace />} />
                   <Route path="dashboard" element={<DashboardPage />} />
+                  <Route path="appointment-prep" element={<AppointmentPrepPage />} />
                   <Route path="symptom-check" element={<SymptomCheckPage />} />
                   <Route path="uploads" element={<UploadsPage />} />
                   <Route path="medications" element={<MedicationsPage />} />
@@ -63,6 +66,7 @@ export default function App() {
                   <Route path="meditation" element={<MeditationPage />} />
                   <Route path="chats" element={<ChatsPage />} />
                   <Route path="health-profile" element={<HealthProfilePage />} />
+                  <Route path="memory" element={<MemoryPage />} />
                   <Route path="lifestyle" element={<LifestylePage />} />
                   <Route path="connections" element={<ConnectionsPage />} />
                   <Route path="public-health" element={<PublicHealthPage />} />
