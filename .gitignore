@@ -13,3 +13,4 @@ frontend/dist/
 .vscode/
 .idea/
 db.sqlite3
+.gstack/

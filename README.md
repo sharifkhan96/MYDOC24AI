@@ -94,6 +94,14 @@ docker compose restart backend
 
 No frontend changes are needed. Responses simply stop being labeled "Demo mode" once a key is active.
 
+The AI doctor page uses D-ID's hosted embed script for the fastest demo path. To point it at a
+different D-ID Agent, set:
+
+```dotenv
+VITE_DID_CLIENT_KEY=...
+VITE_DID_AGENT_ID=...
+```
+
 ## Running tests
 
 ```bash

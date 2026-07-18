@@ -43,6 +43,16 @@ export default function App() {
               <Route path="/" element={<Navigate to="/app/dashboard" replace />} />
               <Route path="/login" element={<LoginPage />} />
               <Route path="/register" element={<RegisterPage />} />
+              <Route
+                path="/live-doctor"
+                element={
+                  <main className="min-h-screen bg-cream px-4 py-6 text-navy-700 sm:px-6 lg:px-10">
+                    <div className="mx-auto max-w-6xl">
+                      <LiveDoctorPage />
+                    </div>
+                  </main>
+                }
+              />
 
               <Route element={<ProtectedRoute />}>
                 <Route path="/app" element={<AppShell />}>
