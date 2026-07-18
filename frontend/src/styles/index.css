@@ -41,3 +41,47 @@
     @apply font-serif text-navy-700;
   }
 }
+
+@layer components {
+  .did-agent-target {
+    position: relative;
+    width: 100%;
+    /* D-ID full mode renders into a shadow root whose internal layout uses height: 100%. */
+    height: clamp(560px, 72vh, 820px);
+    overflow: hidden;
+    background: rgb(var(--cream-100));
+  }
+
+  .did-agent-target > * {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    max-height: none !important;
+    margin: 0 !important;
+  }
+
+  .did-agent-target .didagent__render__host,
+  .did-agent-target .didagent__render__host__item,
+  .did-agent-target .didagent__main__wrapper,
+  .did-agent-target .didagent__embedded__container,
+  .did-agent-target .didagent__embedded__container__preview,
+  .did-agent-target .didagent__embedded__video__container,
+  .did-agent-target .didagent__iframe,
+  .did-agent-target .didagent__iframe__frame {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 100% !important;
+    max-width: none !important;
+    max-height: none !important;
+  }
+
+  .did-agent-target .didagent__embedded__video__container > video,
+  .did-agent-target .didagent__embedded__video__container img,
+  .did-agent-target iframe {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+  }
+}

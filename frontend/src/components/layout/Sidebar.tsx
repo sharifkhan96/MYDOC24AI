@@ -24,7 +24,7 @@ const NAV_GROUPS = [
       { to: "/app/symptom-check", label: "Symptom check", icon: Stethoscope },
       { to: "/app/uploads", label: "Photo & test review", icon: ScanLine },
       { to: "/app/medications", label: "Medications", icon: Pill },
-      { to: "/app/live-doctor", label: "Live doctor", icon: Video },
+      { to: "/app/live-doctor", label: "AI doctor", icon: Video },
       { to: "/app/meditation", label: "Meditation", icon: Moon },
       { to: "/app/chats", label: "Chats", icon: MessageCircle },
     ],
