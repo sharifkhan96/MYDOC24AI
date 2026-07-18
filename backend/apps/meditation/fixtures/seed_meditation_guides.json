@@ -1,0 +1,41 @@
+[
+  {
+    "model": "meditation.meditationguide",
+    "pk": 1,
+    "fields": {
+      "name": "Jamie",
+      "tone": "funny",
+      "avatar_image_url": "",
+      "tagline": "Here to make you smile first, calm second.",
+      "voice_id": "",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "meditation.meditationguide",
+    "pk": 2,
+    "fields": {
+      "name": "Sam",
+      "tone": "moderate",
+      "avatar_image_url": "",
+      "tagline": "Steady, practical, here for you.",
+      "voice_id": "",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "meditation.meditationguide",
+    "pk": 3,
+    "fields": {
+      "name": "Elena",
+      "tone": "serious",
+      "avatar_image_url": "",
+      "tagline": "Quiet, grounded, and real.",
+      "voice_id": "",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  }
+]

@@ -1,0 +1,317 @@
+[
+  {
+    "model": "medications.medicationreference",
+    "pk": 1,
+    "fields": {
+      "name": "Ibuprofen",
+      "generic_name": "Ibuprofen",
+      "drug_class": "NSAID (nonsteroidal anti-inflammatory)",
+      "adult_dosing": "200 to 400 mg by mouth every 4 to 6 hours as needed, not exceeding 1200 mg in 24 hours without medical advice.",
+      "pediatric_dosing": "Weight-based, typically 5 to 10 mg per kg every 6 to 8 hours; use the dosing device that comes with pediatric formulations.",
+      "how_to_take": "Take with food or milk to reduce stomach upset. Swallow tablets whole with water.",
+      "food_alcohol_interactions": "Avoid regular alcohol use, which raises the risk of stomach bleeding.",
+      "common_side_effects": "Stomach upset, heartburn, mild headache.",
+      "serious_side_effects": "Stomach bleeding, kidney problems, allergic reaction, and increased cardiovascular risk with long-term high-dose use.",
+      "missed_dose_guidance": "Since it's taken as needed, take a missed dose when you remember unless it's close to the next one; don't double up.",
+      "interaction_warnings": ["Blood thinners such as warfarin", "Other NSAIDs or aspirin", "ACE inhibitors or diuretics (kidney strain)"],
+      "is_seeded": true,
+      "generated_as_mock": false,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "medications.medicationreference",
+    "pk": 2,
+    "fields": {
+      "name": "Acetaminophen",
+      "generic_name": "Paracetamol",
+      "drug_class": "Analgesic and antipyretic",
+      "adult_dosing": "500 to 1000 mg every 4 to 6 hours as needed, not exceeding 3000 to 4000 mg in 24 hours depending on the product label.",
+      "pediatric_dosing": "Weight-based, typically 10 to 15 mg per kg every 4 to 6 hours; always use the pediatric dosing chart or device provided.",
+      "how_to_take": "Can be taken with or without food. Swallow tablets whole with water.",
+      "food_alcohol_interactions": "Avoid regular or heavy alcohol use, which raises the risk of liver damage.",
+      "common_side_effects": "Generally well tolerated; mild nausea in some people.",
+      "serious_side_effects": "Liver damage with overdose or in combination with other acetaminophen-containing products.",
+      "missed_dose_guidance": "Taken as needed; take when remembered unless close to the next dose.",
+      "interaction_warnings": ["Other products containing acetaminophen (cold and flu combinations)", "Warfarin at high doses"],
+      "is_seeded": true,
+      "generated_as_mock": false,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "medications.medicationreference",
+    "pk": 3,
+    "fields": {
+      "name": "Amoxicillin",
+      "generic_name": "Amoxicillin",
+      "drug_class": "Penicillin antibiotic",
+      "adult_dosing": "250 to 500 mg every 8 hours, or as prescribed, for the full course even if you feel better early.",
+      "pediatric_dosing": "Weight-based, prescribed by a clinician; typically given as a liquid suspension for young children.",
+      "how_to_take": "Can be taken with or without food; taking with food may reduce stomach upset.",
+      "food_alcohol_interactions": "No significant interaction with alcohol, though feeling unwell is best avoided while on antibiotics.",
+      "common_side_effects": "Nausea, diarrhea, mild rash.",
+      "serious_side_effects": "Allergic reaction (hives, swelling, difficulty breathing), severe diarrhea from C. difficile infection.",
+      "missed_dose_guidance": "Take as soon as you remember; if it's almost time for the next dose, skip the missed one and continue the schedule. Complete the full course.",
+      "interaction_warnings": ["Hormonal contraceptives may be less effective", "Allopurinol increases rash risk"],
+      "is_seeded": true,
+      "generated_as_mock": false,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "medications.medicationreference",
+    "pk": 4,
+    "fields": {
+      "name": "Lisinopril",
+      "generic_name": "Lisinopril",
+      "drug_class": "ACE inhibitor (blood pressure medication)",
+      "adult_dosing": "Typically 10 to 40 mg once daily, started low and adjusted by a clinician.",
+      "pediatric_dosing": "Used in some children with a clinician's weight-based dosing; not for general self-use.",
+      "how_to_take": "Take at the same time each day, with or without food.",
+      "food_alcohol_interactions": "Alcohol can increase the blood-pressure-lowering effect and cause dizziness.",
+      "common_side_effects": "Dry cough, dizziness, headache.",
+      "serious_side_effects": "Swelling of the face or throat (angioedema), high potassium levels, kidney function changes.",
+      "missed_dose_guidance": "Take as soon as remembered; if it's nearly time for the next dose, skip the missed one. Don't double up.",
+      "interaction_warnings": ["Potassium supplements or potassium-sparing diuretics", "NSAIDs (reduced effectiveness, kidney strain)", "Lithium"],
+      "is_seeded": true,
+      "generated_as_mock": false,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "medications.medicationreference",
+    "pk": 5,
+    "fields": {
+      "name": "Atorvastatin",
+      "generic_name": "Atorvastatin",
+      "drug_class": "Statin (cholesterol-lowering medication)",
+      "adult_dosing": "Typically 10 to 80 mg once daily, dose set by a clinician based on cholesterol targets.",
+      "pediatric_dosing": "Occasionally used in adolescents with familial high cholesterol under specialist care.",
+      "how_to_take": "Can be taken any time of day, with or without food, but stick to the same time daily.",
+      "food_alcohol_interactions": "Avoid grapefruit and grapefruit juice, which can raise drug levels; limit alcohol due to liver strain.",
+      "common_side_effects": "Muscle aches, mild digestive upset.",
+      "serious_side_effects": "Severe muscle breakdown (rare), liver enzyme elevation.",
+      "missed_dose_guidance": "Take as soon as remembered unless it's almost time for the next dose; don't double up.",
+      "interaction_warnings": ["Grapefruit juice", "Certain antibiotics and antifungals", "Other cholesterol medications (fibrates)"],
+      "is_seeded": true,
+      "generated_as_mock": false,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "medications.medicationreference",
+    "pk": 6,
+    "fields": {
+      "name": "Metformin",
+      "generic_name": "Metformin",
+      "drug_class": "Biguanide (type 2 diabetes medication)",
+      "adult_dosing": "Typically 500 to 1000 mg twice daily with meals, titrated by a clinician up to a maximum daily dose.",
+      "pediatric_dosing": "Used in some adolescents with type 2 diabetes under specialist guidance.",
+      "how_to_take": "Take with meals to reduce stomach upset.",
+      "food_alcohol_interactions": "Limit alcohol, which increases the risk of a rare but serious condition called lactic acidosis.",
+      "common_side_effects": "Diarrhea, nausea, metallic taste, especially when starting.",
+      "serious_side_effects": "Lactic acidosis (rare, more likely with kidney impairment), vitamin B12 deficiency with long-term use.",
+      "missed_dose_guidance": "Skip the missed dose if it's almost time for the next one; don't double up.",
+      "interaction_warnings": ["Contrast dye used in some imaging scans", "Heavy alcohol use"],
+      "is_seeded": true,
+      "generated_as_mock": false,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "medications.medicationreference",
+    "pk": 7,
+    "fields": {
+      "name": "Omeprazole",
+      "generic_name": "Omeprazole",
+      "drug_class": "Proton pump inhibitor (acid reducer)",
+      "adult_dosing": "Typically 20 to 40 mg once daily before breakfast for 4 to 8 weeks, or longer term as directed.",
+      "pediatric_dosing": "Weight-based dosing used under a clinician's guidance for reflux.",
+      "how_to_take": "Take before a meal, usually breakfast, swallowing the capsule whole.",
+      "food_alcohol_interactions": "No major interaction, though alcohol can worsen the reflux symptoms it treats.",
+      "common_side_effects": "Headache, stomach pain, mild diarrhea or constipation.",
+      "serious_side_effects": "Increased fracture risk and low magnesium with long-term use, higher risk of certain gut infections.",
+      "missed_dose_guidance": "Take as soon as remembered; if close to the next dose, skip the missed one.",
+      "interaction_warnings": ["Clopidogrel (reduced effectiveness)", "Certain HIV and antifungal medications"],
+      "is_seeded": true,
+      "generated_as_mock": false,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "medications.medicationreference",
+    "pk": 8,
+    "fields": {
+      "name": "Sertraline",
+      "generic_name": "Sertraline",
+      "drug_class": "SSRI antidepressant",
+      "adult_dosing": "Typically started at 25 to 50 mg once daily, adjusted by a clinician up to 200 mg as needed.",
+      "pediatric_dosing": "Used in some adolescents for OCD under specialist supervision.",
+      "how_to_take": "Take at the same time each day, with or without food; morning or evening depending on how it affects your sleep.",
+      "food_alcohol_interactions": "Avoid alcohol, which can worsen mood symptoms and increase sedation.",
+      "common_side_effects": "Nausea, sleep changes, sexual side effects, dry mouth.",
+      "serious_side_effects": "Increased suicidal thoughts in young people early in treatment, serotonin syndrome when combined with other serotonergic drugs.",
+      "missed_dose_guidance": "Take as soon as remembered unless nearly time for the next dose; never double up.",
+      "interaction_warnings": ["MAOI antidepressants (serious interaction)", "Other serotonergic medications or supplements like St. John's Wort", "Blood thinners"],
+      "is_seeded": true,
+      "generated_as_mock": false,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "medications.medicationreference",
+    "pk": 9,
+    "fields": {
+      "name": "Levothyroxine",
+      "generic_name": "Levothyroxine",
+      "drug_class": "Thyroid hormone replacement",
+      "adult_dosing": "Dose is individualized based on blood tests, typically once daily.",
+      "pediatric_dosing": "Weight-based, individualized by a pediatric specialist.",
+      "how_to_take": "Take on an empty stomach, 30 to 60 minutes before breakfast, with water only.",
+      "food_alcohol_interactions": "Calcium, iron supplements, and coffee can reduce absorption if taken too close together.",
+      "common_side_effects": "Usually minimal when dosed correctly; too high a dose can cause palpitations, anxiety, or weight loss.",
+      "serious_side_effects": "Heart rhythm problems if the dose is too high, especially in older adults.",
+      "missed_dose_guidance": "Take as soon as remembered that day; don't double up the next day without checking with a clinician.",
+      "interaction_warnings": ["Calcium and iron supplements", "Antacids", "Certain cholesterol medications (bile acid sequestrants)"],
+      "is_seeded": true,
+      "generated_as_mock": false,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "medications.medicationreference",
+    "pk": 10,
+    "fields": {
+      "name": "Amlodipine",
+      "generic_name": "Amlodipine",
+      "drug_class": "Calcium channel blocker (blood pressure medication)",
+      "adult_dosing": "Typically 5 to 10 mg once daily.",
+      "pediatric_dosing": "Used in some children with hypertension under specialist weight-based dosing.",
+      "how_to_take": "Take at the same time each day, with or without food.",
+      "food_alcohol_interactions": "Avoid grapefruit juice; alcohol can add to dizziness and blood-pressure-lowering effects.",
+      "common_side_effects": "Ankle swelling, flushing, dizziness, headache.",
+      "serious_side_effects": "Significant low blood pressure, rarely worsened chest pain in unstable heart disease.",
+      "missed_dose_guidance": "Take as soon as remembered unless it's nearly time for the next dose.",
+      "interaction_warnings": ["Grapefruit juice", "Simvastatin (dose limits apply)"],
+      "is_seeded": true,
+      "generated_as_mock": false,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "medications.medicationreference",
+    "pk": 11,
+    "fields": {
+      "name": "Metoprolol",
+      "generic_name": "Metoprolol",
+      "drug_class": "Beta blocker",
+      "adult_dosing": "Typically 25 to 100 mg once or twice daily depending on the formulation and condition treated.",
+      "pediatric_dosing": "Rarely used in children, only under specialist cardiology care.",
+      "how_to_take": "Take with or immediately after food to improve absorption; don't stop suddenly without medical advice.",
+      "food_alcohol_interactions": "Alcohol can add to dizziness and blood-pressure-lowering effects.",
+      "common_side_effects": "Fatigue, cold hands and feet, dizziness.",
+      "serious_side_effects": "Very slow heart rate, worsening heart failure symptoms, masking of low blood sugar signs in diabetes.",
+      "missed_dose_guidance": "Take as soon as remembered unless nearly time for the next dose; never stop abruptly.",
+      "interaction_warnings": ["Other blood-pressure or heart-rate-lowering medications", "Certain antidepressants"],
+      "is_seeded": true,
+      "generated_as_mock": false,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "medications.medicationreference",
+    "pk": 12,
+    "fields": {
+      "name": "Albuterol",
+      "generic_name": "Salbutamol",
+      "drug_class": "Short-acting beta agonist (rescue inhaler)",
+      "adult_dosing": "1 to 2 puffs (90 to 180 mcg) every 4 to 6 hours as needed for symptoms.",
+      "pediatric_dosing": "Similar dosing with a spacer device, as advised by a pediatric clinician.",
+      "how_to_take": "Shake well, use with a spacer if available, and rinse the mouth after use.",
+      "food_alcohol_interactions": "No significant food or alcohol interaction.",
+      "common_side_effects": "Shakiness, rapid heartbeat, nervous feeling.",
+      "serious_side_effects": "Chest pain or significant palpitations, worsening breathing despite frequent use (seek urgent care).",
+      "missed_dose_guidance": "Used as needed for symptoms rather than on a fixed schedule; no missed-dose concern.",
+      "interaction_warnings": ["Other stimulant medications", "Beta blockers (reduce its effect)"],
+      "is_seeded": true,
+      "generated_as_mock": false,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "medications.medicationreference",
+    "pk": 13,
+    "fields": {
+      "name": "Loratadine",
+      "generic_name": "Loratadine",
+      "drug_class": "Second-generation antihistamine",
+      "adult_dosing": "10 mg once daily as needed for allergy symptoms.",
+      "pediatric_dosing": "5 mg once daily for children 2 to 5 years old, 10 mg for 6 years and up, per product labeling.",
+      "how_to_take": "Can be taken with or without food.",
+      "food_alcohol_interactions": "Minimal interaction; less sedating than older antihistamines but caution combining with alcohol is still reasonable.",
+      "common_side_effects": "Mild headache, dry mouth.",
+      "serious_side_effects": "Allergic reaction to the medication itself (uncommon).",
+      "missed_dose_guidance": "Taken as needed; take when remembered.",
+      "interaction_warnings": ["Few significant interactions at standard doses"],
+      "is_seeded": true,
+      "generated_as_mock": false,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "medications.medicationreference",
+    "pk": 14,
+    "fields": {
+      "name": "Cetirizine",
+      "generic_name": "Cetirizine",
+      "drug_class": "Second-generation antihistamine",
+      "adult_dosing": "10 mg once daily as needed for allergy symptoms.",
+      "pediatric_dosing": "2.5 to 5 mg once daily for younger children, 10 mg for 6 years and up, per product labeling.",
+      "how_to_take": "Can be taken with or without food, any time of day.",
+      "food_alcohol_interactions": "Can add to drowsiness with alcohol in some people.",
+      "common_side_effects": "Mild drowsiness, dry mouth.",
+      "serious_side_effects": "Allergic reaction to the medication itself (uncommon).",
+      "missed_dose_guidance": "Taken as needed; take when remembered.",
+      "interaction_warnings": ["Other sedating medications"],
+      "is_seeded": true,
+      "generated_as_mock": false,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "medications.medicationreference",
+    "pk": 15,
+    "fields": {
+      "name": "Aspirin",
+      "generic_name": "Acetylsalicylic acid",
+      "drug_class": "NSAID and antiplatelet",
+      "adult_dosing": "325 to 650 mg every 4 to 6 hours for pain, or 75 to 100 mg once daily when used for heart protection as directed by a clinician.",
+      "pediatric_dosing": "Not recommended for children or teenagers with viral illness due to the risk of Reye's syndrome.",
+      "how_to_take": "Take with food or milk to reduce stomach upset.",
+      "food_alcohol_interactions": "Avoid regular alcohol use, which raises the risk of stomach bleeding.",
+      "common_side_effects": "Stomach upset, heartburn.",
+      "serious_side_effects": "Stomach bleeding, allergic reaction, ringing in the ears at high doses.",
+      "missed_dose_guidance": "For daily low-dose use, take as soon as remembered unless it's nearly time for the next dose; don't double up.",
+      "interaction_warnings": ["Other blood thinners", "Other NSAIDs", "Methotrexate"],
+      "is_seeded": true,
+      "generated_as_mock": false,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  }
+]

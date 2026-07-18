@@ -1,0 +1,146 @@
+[
+  {
+    "model": "encyclopedia.diseaseentry",
+    "pk": 1,
+    "fields": {
+      "name": "Influenza",
+      "slug": "influenza",
+      "category": "clinical",
+      "overview": "Influenza is a contagious respiratory virus causing seasonal epidemics nearly every year, with symptoms including fever, cough, sore throat, and body aches that come on more abruptly than a common cold.",
+      "history": "Flu pandemics have shaped public health for over a century, most notably the 1918 pandemic which killed tens of millions worldwide. Annual vaccination programs became widespread in the mid-20th century as the virus's tendency to mutate each year was better understood.",
+      "severity_mortality_context": "Most healthy people recover without complications, but influenza contributes to hundreds of thousands of hospitalizations and tens of thousands of deaths in a typical season in the United States alone, concentrated among older adults, young children, and people with chronic illness.",
+      "treatment_evolution": "Supportive care (rest, fluids) remains the mainstay for most cases. Antiviral medications taken within the first 48 hours can shorten illness in higher-risk patients. Vaccine formulations are updated yearly to match circulating strains.",
+      "current_outlook": "Flu remains a significant seasonal burden, but widespread vaccination, antiviral treatments, and better surveillance have substantially reduced severe outcomes compared to a century ago.",
+      "sources": [],
+      "is_published": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "encyclopedia.diseaseentry",
+    "pk": 2,
+    "fields": {
+      "name": "Type 2 Diabetes",
+      "slug": "type-2-diabetes",
+      "category": "clinical",
+      "overview": "Type 2 diabetes is a chronic condition where the body becomes resistant to insulin or doesn't produce enough of it, leading to elevated blood sugar over time.",
+      "history": "Described in various forms for thousands of years, but understood as a distinct condition from type 1 diabetes only in the 20th century, alongside the discovery of insulin in 1921 and the later development of oral medications.",
+      "severity_mortality_context": "Uncontrolled type 2 diabetes significantly raises the risk of heart disease, kidney failure, vision loss, and nerve damage, but with consistent management most people live long, active lives.",
+      "treatment_evolution": "Treatment has expanded from insulin and early oral drugs to a wide range of medications targeting different mechanisms, alongside a much stronger evidence base for diet, exercise, and weight management as first-line tools.",
+      "current_outlook": "Rates continue to rise globally alongside obesity trends, but earlier detection and better medications have improved long-term outcomes substantially compared to a few decades ago.",
+      "sources": [],
+      "is_published": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "encyclopedia.diseaseentry",
+    "pk": 3,
+    "fields": {
+      "name": "Hypertension",
+      "slug": "hypertension",
+      "category": "clinical",
+      "overview": "Hypertension, or high blood pressure, is a common condition where the force of blood against artery walls is consistently too high, often with no noticeable symptoms.",
+      "history": "Blood pressure measurement became routine clinical practice in the early 20th century with the invention of the sphygmomanometer, and the risks of untreated hypertension became widely understood through large population studies mid-century.",
+      "severity_mortality_context": "Often called a 'silent' condition because it typically causes no symptoms while steadily raising the risk of heart attack, stroke, and kidney disease over years if left untreated.",
+      "treatment_evolution": "Treatment has evolved from limited early options to a broad set of well-tolerated medication classes, combined with strong evidence for lifestyle changes like reduced sodium intake, regular activity, and weight management.",
+      "current_outlook": "One of the most common chronic conditions worldwide, but also one of the most manageable, with routine monitoring and treatment substantially reducing long-term risk.",
+      "sources": [],
+      "is_published": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "encyclopedia.diseaseentry",
+    "pk": 4,
+    "fields": {
+      "name": "Measles",
+      "slug": "measles",
+      "category": "clinical",
+      "overview": "Measles is a highly contagious viral illness causing fever, cough, and a characteristic rash, spread through airborne droplets.",
+      "history": "Measles caused millions of deaths annually before a vaccine was introduced in 1963, after which cases dropped dramatically in countries with high vaccination coverage.",
+      "severity_mortality_context": "Complications can include pneumonia and encephalitis, and it remains a significant cause of death in under-vaccinated populations, particularly among young children.",
+      "treatment_evolution": "There is no specific antiviral treatment; care is supportive. Prevention through the MMR vaccine is highly effective and remains the primary public health strategy.",
+      "current_outlook": "Largely preventable where vaccination rates stay high, though outbreaks still occur in communities with lower vaccine coverage, underscoring the importance of maintained immunization programs.",
+      "sources": [],
+      "is_published": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "encyclopedia.diseaseentry",
+    "pk": 5,
+    "fields": {
+      "name": "Common Cold",
+      "slug": "common-cold",
+      "category": "clinical",
+      "overview": "The common cold is a mild upper respiratory infection, usually caused by rhinoviruses, with symptoms like a runny nose, sore throat, and mild cough.",
+      "history": "One of the most extensively studied infections, though no cure has ever been found given the sheer number of viruses that can cause it, over 200 identified so far.",
+      "severity_mortality_context": "Almost always mild and self-limiting in healthy people, resolving within seven to ten days without lasting effects.",
+      "treatment_evolution": "Treatment remains supportive \u2014 rest, fluids, and symptom relief \u2014 since antibiotics don't work on viruses and no broadly effective antiviral exists for the many cold-causing viruses.",
+      "current_outlook": "Remains one of the most frequent reasons for missed school and work worldwide, but poses little individual health risk for most people.",
+      "sources": [],
+      "is_published": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "encyclopedia.diseaseentry",
+    "pk": 6,
+    "fields": {
+      "name": "Skin Barrier & Hydration",
+      "slug": "skin-barrier-and-hydration",
+      "category": "wellbeing",
+      "overview": "The skin barrier is the outermost layer that keeps moisture in and irritants out. A healthy barrier is central to skin that looks and feels good, not just cosmetically but functionally.",
+      "history": "",
+      "severity_mortality_context": "",
+      "treatment_evolution": "Understanding of the skin barrier's role has grown substantially, shifting skincare advice away from harsh cleansing toward gentler, barrier-preserving routines with ingredients like ceramides and hyaluronic acid.",
+      "current_outlook": "A simple routine of gentle cleansing, regular moisturizing, and daily sun protection does most of the work for long-term skin health; more isn't usually better.",
+      "sources": [],
+      "is_published": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "encyclopedia.diseaseentry",
+    "pk": 7,
+    "fields": {
+      "name": "Sleep Hygiene",
+      "slug": "sleep-hygiene",
+      "category": "wellbeing",
+      "overview": "Sleep hygiene refers to the habits and environment that support consistent, restorative sleep, one of the most impactful and overlooked factors in overall health.",
+      "history": "",
+      "severity_mortality_context": "Chronic poor sleep is linked to higher risk of heart disease, weakened immunity, and mood disorders, making it a meaningful long-term health factor, not just a comfort issue.",
+      "treatment_evolution": "Sleep medicine has moved away from relying on sedative medication as a first response, toward behavioral approaches like consistent sleep and wake times, limiting evening screen use, and cognitive behavioral therapy for insomnia.",
+      "current_outlook": "Small, consistent changes to routine and environment resolve most everyday sleep difficulties without medication.",
+      "sources": [],
+      "is_published": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "encyclopedia.diseaseentry",
+    "pk": 8,
+    "fields": {
+      "name": "Healthy Hair Care",
+      "slug": "healthy-hair-care",
+      "category": "wellbeing",
+      "overview": "Hair health reflects a combination of scalp care, nutrition, and how hair is handled day to day, more than any single product.",
+      "history": "",
+      "severity_mortality_context": "",
+      "treatment_evolution": "Understanding has shifted toward scalp health as the foundation, alongside recognition that over-washing, heat styling, and tight hairstyles are common contributors to damage previously blamed on hair type alone.",
+      "current_outlook": "A gentle routine, balanced nutrition, and minimizing heat and tension on the hair go a long way for most people; persistent hair loss is worth discussing with a clinician rather than addressing with products alone.",
+      "sources": [],
+      "is_published": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  }
+]

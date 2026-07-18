@@ -1,0 +1,58 @@
+[
+  {
+    "model": "avatar_sessions.persona",
+    "pk": 1,
+    "fields": {
+      "name": "Dr. Amara Chen",
+      "role": "doctor",
+      "gender": "female",
+      "voice_id": "",
+      "avatar_image_url": "",
+      "tagline": "Calm, direct, and easy to talk to.",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "avatar_sessions.persona",
+    "pk": 2,
+    "fields": {
+      "name": "Dr. James Whitfield",
+      "role": "doctor",
+      "gender": "male",
+      "voice_id": "",
+      "avatar_image_url": "",
+      "tagline": "Thorough and reassuring.",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "avatar_sessions.persona",
+    "pk": 3,
+    "fields": {
+      "name": "Nurse Priya Sharma",
+      "role": "nurse",
+      "gender": "female",
+      "voice_id": "",
+      "avatar_image_url": "",
+      "tagline": "Warm and practical, great for everyday questions.",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "avatar_sessions.persona",
+    "pk": 4,
+    "fields": {
+      "name": "Nurse Marcus Boone",
+      "role": "nurse",
+      "gender": "male",
+      "voice_id": "",
+      "avatar_image_url": "",
+      "tagline": "Friendly and unhurried.",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  }
+]

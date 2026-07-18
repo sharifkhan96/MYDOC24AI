@@ -1,0 +1,66 @@
+[
+  {
+    "model": "public_health_content.bulletin",
+    "pk": 1,
+    "fields": {
+      "title": "Seasonal flu: what to know this winter",
+      "region": "",
+      "summary": "Flu activity typically rises in colder months. A yearly vaccine remains the single best protection, especially for older adults, young children, and people with chronic conditions.",
+      "body": "Influenza spreads through respiratory droplets and surfaces, with symptoms usually appearing one to four days after exposure: fever, chills, muscle aches, cough, and fatigue that can be more sudden and severe than a common cold. Most healthy adults recover within a week to ten days with rest and fluids. Annual vaccination before flu season remains the most effective prevention, alongside regular handwashing and staying home while symptomatic. Seek care promptly if breathing becomes difficult, symptoms improve then sharply worsen, or a high fever persists beyond a few days.",
+      "severity_level": "moderate",
+      "source_links": [],
+      "is_published": true,
+      "published_at": "2026-01-05T00:00:00Z",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "public_health_content.bulletin",
+    "pk": 2,
+    "fields": {
+      "title": "Seasonal allergies: reducing exposure and symptoms",
+      "region": "",
+      "summary": "Pollen counts rise in spring and can trigger sneezing, itchy eyes, and congestion. Simple exposure changes plus over-the-counter antihistamines manage most cases well.",
+      "body": "Seasonal allergic rhinitis is triggered by airborne pollen from trees, grasses, or weeds depending on the time of year. Checking daily pollen forecasts, keeping windows closed on high-count days, showering after time outdoors, and using saline rinses can meaningfully cut symptoms. Non-drowsy antihistamines and nasal sprays work well for most people; if symptoms disrupt sleep or daily life despite these steps, an allergist can help identify specific triggers and longer-term options.",
+      "severity_level": "low",
+      "source_links": [],
+      "is_published": true,
+      "published_at": "2026-03-01T00:00:00Z",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "public_health_content.bulletin",
+    "pk": 3,
+    "fields": {
+      "title": "Heat safety during summer heatwaves",
+      "region": "",
+      "summary": "Extreme heat is a leading weather-related health risk. Staying hydrated, limiting exertion during peak hours, and checking on elderly neighbors saves lives.",
+      "body": "Heat-related illness ranges from heat cramps and heat exhaustion to life-threatening heat stroke. Risk rises sharply for infants, older adults, outdoor workers, and people with heart or kidney conditions. Practical steps include drinking water regularly rather than waiting for thirst, avoiding strenuous activity during the hottest part of the day, wearing light clothing, and never leaving anyone in a parked car. Confusion, hot dry skin, or a very high body temperature are signs of heat stroke and require emergency care immediately.",
+      "severity_level": "moderate",
+      "source_links": [],
+      "is_published": true,
+      "published_at": "2026-06-10T00:00:00Z",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "public_health_content.bulletin",
+    "pk": 4,
+    "fields": {
+      "title": "Norovirus and stomach bugs: staying ahead of outbreaks",
+      "region": "",
+      "summary": "Norovirus spreads easily in schools, care homes, and cruise ships. Thorough handwashing (not just sanitizer) is the most effective everyday prevention.",
+      "body": "Norovirus causes sudden vomiting and diarrhea and spreads very easily through contaminated surfaces, food, and close contact, often causing fast-moving outbreaks in shared settings. Alcohol-based hand sanitizer is less effective against it than thorough handwashing with soap and water. Anyone symptomatic should avoid preparing food for others and stay home until at least 48 hours after symptoms resolve. Most cases resolve on their own with rest and fluids; the main risk is dehydration, particularly in young children and older adults.",
+      "severity_level": "low",
+      "source_links": [],
+      "is_published": true,
+      "published_at": "2026-02-15T00:00:00Z",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  }
+]
