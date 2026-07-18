@@ -2,6 +2,7 @@ import {
   Activity,
   BrainCircuit,
   BookOpen,
+  ClipboardPlus,
   Heart,
   LayoutDashboard,
   Link2,
@@ -22,6 +23,7 @@ const NAV_GROUPS = [
     label: "Care",
     items: [
       { to: "/app/dashboard", label: "Dashboard", icon: LayoutDashboard },
+      { to: "/app/appointment-prep", label: "Appointment prep", icon: ClipboardPlus },
       { to: "/app/symptom-check", label: "Symptom check", icon: Stethoscope },
       { to: "/app/uploads", label: "Photo & test review", icon: ScanLine },
       { to: "/app/medications", label: "Medications", icon: Pill },

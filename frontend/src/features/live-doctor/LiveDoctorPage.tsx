@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { Mic, PhoneOff, Send, Stethoscope } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import {
   createAvatarSession,
@@ -61,6 +62,7 @@ function PersonaPicker({ personas, onSelect }: { personas: Persona[]; onSelect: 
 }
 
 function ActiveSession({ session, onEnd }: { session: AvatarSession; onEnd: () => void }) {
+  const navigate = useNavigate();
   const [turns, setTurns] = useState<AvatarTurn[]>(session.turns);
   const [text, setText] = useState("");
   const [isSending, setIsSending] = useState(false);
@@ -178,6 +180,15 @@ function ActiveSession({ session, onEnd }: { session: AvatarSession; onEnd: () =
       <div className="mt-6 max-w-2xl">
         <Disclaimer compact />
       </div>
+      {turns.length > 0 && (
+        <Button
+          variant="secondary"
+          className="mt-4"
+          onClick={() => navigate(`/app/appointment-prep?${new URLSearchParams({ reason: `I would like to discuss: ${turns[turns.length - 1].user_text}` })}`)}
+        >
+          Prepare for an appointment
+        </Button>
+      )}
     </div>
   );
 }

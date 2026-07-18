@@ -1,4 +1,4 @@
-import { Activity, BrainCircuit, Heart, MessageCircle, Pill, ScanLine, Stethoscope, Video } from "lucide-react";
+import { Activity, BrainCircuit, ClipboardPlus, Heart, MessageCircle, Pill, ScanLine, Stethoscope, Video } from "lucide-react";
 import { Link } from "react-router-dom";
 
 import { Card, CardDescription, CardTitle } from "@/components/ui/Card";
@@ -6,6 +6,7 @@ import { useAuth } from "@/features/auth/AuthContext";
 import { CheckInChart } from "@/features/lifestyle/CheckInChart";
 
 const QUICK_LINKS = [
+  { to: "/app/appointment-prep", label: "Prepare for an appointment", description: "Bring your health record and recent updates together for a clinician.", icon: ClipboardPlus },
   { to: "/app/symptom-check", label: "Check a symptom", description: "Describe what's going on and get a triaged next step.", icon: Stethoscope },
   { to: "/app/uploads", label: "Review a photo or test", description: "Upload a skin photo or a lab report for a structured read.", icon: ScanLine },
   { to: "/app/live-doctor", label: "Talk to a live doctor", description: "Start a spoken consultation with a doctor or nurse persona.", icon: Video },

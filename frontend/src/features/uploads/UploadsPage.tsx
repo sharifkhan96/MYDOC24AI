@@ -1,9 +1,11 @@
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { AlertTriangle, FileText, ScanLine } from "lucide-react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import { listMedia, uploadMedia, type MediaKind, type UploadedMedia } from "@/api/media";
 import { Badge } from "@/components/ui/Badge";
+import { Button } from "@/components/ui/Button";
 import { Card, CardDescription, CardTitle } from "@/components/ui/Card";
 import { Disclaimer } from "@/components/ui/Disclaimer";
 import { EmptyState } from "@/components/ui/EmptyState";
@@ -19,6 +21,7 @@ const KIND_OPTIONS: { value: MediaKind; label: string; accept: string }[] = [
 
 export function UploadsPage() {
   const queryClient = useQueryClient();
+  const navigate = useNavigate();
   const [kind, setKind] = useState<MediaKind>("skin_image");
   const [isUploading, setIsUploading] = useState(false);
   const [current, setCurrent] = useState<UploadedMedia | null>(null);
@@ -98,6 +101,13 @@ export function UploadsPage() {
           <div className="mt-6">
             <Disclaimer compact />
           </div>
+          <Button
+            variant="secondary"
+            className="mt-4"
+            onClick={() => navigate(`/app/appointment-prep?${new URLSearchParams({ reason: `I would like to discuss the findings from my ${KIND_OPTIONS.find((option) => option.value === current.kind)?.label.toLowerCase() ?? "recent upload"}.` })}`)}
+          >
+            Prepare for an appointment
+          </Button>
         </Card>
       )}
 

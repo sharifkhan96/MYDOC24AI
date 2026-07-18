@@ -3,6 +3,7 @@ import { Navigate, Route, BrowserRouter, Routes } from "react-router-dom";
 
 import { AppShell } from "@/components/layout/AppShell";
 import { AuthProvider } from "@/features/auth/AuthContext";
+import { AppointmentPrepPage } from "@/features/appointment-prep/AppointmentPrepPage";
 import { LoginPage } from "@/features/auth/LoginPage";
 import { ProtectedRoute } from "@/features/auth/ProtectedRoute";
 import { RegisterPage } from "@/features/auth/RegisterPage";
@@ -47,6 +48,7 @@ export default function App() {
                 <Route path="/app" element={<AppShell />}>
                   <Route index element={<Navigate to="dashboard" replace />} />
                   <Route path="dashboard" element={<DashboardPage />} />
+                  <Route path="appointment-prep" element={<AppointmentPrepPage />} />
                   <Route path="symptom-check" element={<SymptomCheckPage />} />
                   <Route path="uploads" element={<UploadsPage />} />
                   <Route path="medications" element={<MedicationsPage />} />
